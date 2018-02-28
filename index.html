@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>jquery tmpl</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+        th{
+            width:25%;
+        }
+    </style>
+</head>
+<body class="">
+
+<!--jumbotron start-->
+<div class=" jumbotron">
+    <div class=" col-xs-offset-2">
+        <h1>jQuery.tmpl实例</h1>
+        <p>jQuery.tmpl.js是一款动态请求数据，然后拼接HTML的组件</p>
+        <a class="btn btn-primary">了解更多 <span class="glyphicon glyphicon-ok"></span></a>
+    </div>
+</div>
+<!--jumbotron end-->
+<div class="container">
+    <div class=" panel panel-info text-center">
+        <div class="panel-heading">
+            <button type="button" onclick="generate();"  class="btn btn-primary">生成 <i class="glyphicon glyphicon-repeat"></i></button>
+            <small>点击按钮动态生成表格数据</small>
+        </div>
+        <table id="tr1" class="table table-striped table-hover table-bordered">
+            <tr class="">
+                <th>ID</th>
+                <th>name</th>
+                <th>num</th>
+                <th>status</th>
+            </tr>
+            <script id="demo" type="text/x-jquery-tmpl">
+                <tr>
+                    <td>{{= ID}}</td>
+                    <td>{{= Name}}</td>
+                    <td>${Number(Num)+1}</td>
+                    <td>${Status}</td>
+                </tr>
+            </script>
+        </table>
+    </div>
+</div>
+</body>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.js"></script>
+<script>
+  
+</script>
+</html>
